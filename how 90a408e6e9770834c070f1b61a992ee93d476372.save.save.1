@@ -1,0 +1,53 @@
+nano "how 90a408e6e9770834c070f1b61a992ee93d476372.save"nano "how 90a408e6e9770834c070f1b61a992ee93d476372.save"emo_terrorist@DESKTOP-MVU09M8:~$ export GITHUB_USERNAME=emoterrorist
+
+emo_terrorist@DESKTOP-MVU09M8:~$ alias edit=nano
+emo_terrorist@DESKTOP-MVU09M8:~$ mkdir -p ${GITHUB_USERNAME}/workspace
+emo_terrorist@DESKTOP-MVU09M8:~$ cd ${GITHUB_USERNAME}/workspace
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$ pwd
+/home/emo_terrorist/emoterrorist/workspace
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$ cd ..
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist$ pwd
+/home/emo_terrorist/emoterrorist
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist$ mkdir -p workspace/tasks/
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist$ mkdir -p workspace/projects/
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist$ mkdir -p workspace/reports/
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist$ cd workspace
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz
+--2025-03-06 18:50:43--  https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz
+Resolving nodejs.org (nodejs.org)... 104.20.22.46, 104.20.23.46, 2606:4700:10::6814:172e, ...
+Connecting to nodejs.org (nodejs.org)|104.20.22.46|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 9356460 (8.9M) [application/x-xz]
+Saving to: ‘node-v6.11.5-linux-x64.tar.xz’
+
+node-v6.11.5-linux-x64.tar.xz 100%[=================================================>]   8.92M  25.7MB/s    in 0.3s
+
+2025-03-06 18:50:44 (25.7 MB/s) - ‘node-v6.11.5-linux-x64.tar.xz’ saved [9356460/9356460]
+
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$ tar -xf node-v6.11.5-linux-x64.tar.xz
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$ rm -rf node-v6.11.5-linux-x64.tar.xz
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$ mv node-v6.11.5-linux-x64 node
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$ ls node/bin
+node  npm
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$ echo ${PATH}
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.4.11.0_x64__8wekyb3d8bbwe:/mnt/c/Users/Cybermart/gcc/bin:/mnt/c/Users/Cybermart/gcc/libexec/gcc/x86_64-w64-mingw32/12.3.0:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/AmneziaWG/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Cybermart/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Cybermart/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Cybermart/AppData/Local/Microsoft/WindowsApps:/mnt/d/Microsoft VS Code/bin:/mnt/c/Users/Cybermart/AppData/Local/spicetify:/mnt/c/Users/Cybermart/.dotnet/tools:/snap/bin
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$ export PATH=${PATH}:`pwd`/node/bin
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$ echo ${PATH
+>
+> emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$ echo ${PATH}
+> -cd
+> ^C
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$ echo ${PATH}
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.4.11.0_x64__8wekyb3d8bbwe:/mnt/c/Users/Cybermart/gcc/bin:/mnt/c/Users/Cybermart/gcc/libexec/gcc/x86_64-w64-mingw32/12.3.0:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/AmneziaWG/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Cybermart/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Cybermart/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Cybermart/AppData/Local/Microsoft/WindowsApps:/mnt/d/Microsoft VS Code/bin:/mnt/c/Users/Cybermart/AppData/Local/spicetify:/mnt/c/Users/Cybermart/.dotnet/tools:/snap/bin:/home/emo_terrorist/emoterrorist/workspace/node/bin
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$ mkdir scripts
+mkdir: cannot create directory ‘scripts’: File exists
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$ cat > scripts/activate<<EOF
+> export PATH=\${PATH}:`pwd`/node/bin
+> EOF
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$ source scripts/activate
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$ gem install gist
+ERROR:  While executing gem ... (Gem::FilePermissionError)
+    You don't have write permissions for the /var/lib/gems/2.7.0 directory.
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$ (umask 0077 && echo ${GIST_TOKEN} > ~/.gist)
+emo_terrorist@DESKTOP-MVU09M8:~/emoterrorist/workspace$
+
